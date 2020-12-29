@@ -1,49 +1,42 @@
+* {
+	border-size: box-border;
+}
 body {
-	overflow-x: auto;margin: 0 auto; max-width: 1200px; 
-	min-width: 1200px; 
+	overflow-x: auto;margin: 0 auto;min-width: 500px; 
+	max-width: 1200px; 
 }
 #topbar {
 	background-color: skyblue; padding: 0 10%; 
-	display: flex; align-items: center;	
-	justify-content: space-between;
+	display: flex; flex-flow: row wrap; align-items: center;	
 }
 #topbar div {
-	padding: 10px; 
-}
-.contactmail {
-	color: white;
-}
-.contactphone {
-	color: white; flex-grow: 1; 
+	padding: 10px 0; color: white; margin-right: 10px;  
 }
 .topicons {
-	color: white; 
+	flex-grow: 1; text-align: right;
 }
 #header {
 	background: url(Background.png)no-repeat; 
-	background-size: cover; height: 100px; padding: 0 12%;
-	display: flex; justify-content: space-between;
-	align-items: center;
+	background-size: cover; padding: 0 12%;
+	display: flex; flex-flow: row wrap; align-items: center; color: white; justify-content: space-between;
 }
-.logo {
-	height: 100px; width: 200px;
+.logo img {
+	height: 100px; width: 200px; margin-top: 5px;
 }
 .search {
-	height: 25px; margin-right: -55%; border: 3px solid blue; 
-	color: white; padding: 0;
-}
-.fas fa-search{
-	color: white; background-color:blue;
+	height: 25px; border: 3px solid blue; padding: 0; 
+	color: white; width: 200px; 
 }
 #menu {
 	background-color: skyblue; padding: 0 10%; 
 }
 #menu ul {
 	list-style: none; color: white; padding: 0; margin: 0; 
-	display: flex; justify-content: space-around;	
+	display: flex; flex-flow: row wrap;   
+	justify-content: space-around;	
 }
 #menu ul li {
-	padding: 5px 0;
+	padding: 5px;
 }
 #menu ul li:hover {
 	background-color: white; color: skyblue;
@@ -52,17 +45,28 @@ body {
 	height: 25%; width: 100%;
 }
 #gallery {
-	text-align: center; display: flex; 
-	justify-content: center;
+	text-align: center; display: flex; flex-flow: row wrap;
+	justify-content: space-around;
+}
+#gallery div {
+	width: 25%;height: 60%; margin-top: -5px; 
+	text-align: center;
 }
 #gallery img { 
-	height: 30%; width: 100%; margin-top: -5px;
+	height: 50%; width: 100%;
+}
+#gallery div p {
+	padding: 0 10px;
 }
 #gallery h3 {
 	color: blue;
 }
 #products {
-	margin: -100px 10% 0 10%; text-align: center;
+	margin: 0 10%; text-align: center;
+}
+.items {
+	display: flex; flex-wrap: wrap;
+	justify-content: space-around; 
 }
 #products h2 {
 	background-color: skyblue; width: 100%; padding: 5px 0; 
@@ -70,7 +74,7 @@ body {
 }
 .items {
 	display: flex; flex-wrap: wrap; color: skyblue;
-	justify-content: space-evenly; font-weight: bold;
+	font-weight: bold;
 }
 .items div {
 	margin: 10px 1%;
@@ -93,19 +97,18 @@ body {
 	color: skyblue; background-color: white; height: 100%;
 }
 .content1 ul li {
-	padding: 8px 10px; 
+	padding: 7px 10px; 
 }
 .content1 ul li:hover {
 	background-color: skyblue; color: white;
 }
 .content2 {
 	background: url(Background.png)no-repeat;
-	background-size: cover; height: 100%; 
+	background-size: cover;  
 }
 .content2 div{
-	background-color: black; color: grey; margin-top: : ;  
-	opacity: 0.70; width: 50%; height: 100%;  
-	padding: 0 20px;
+	background-color: black; color: grey; opacity: 0.70; 
+	 width: 50%; height: 100%; padding: 0 20px; 
 }
 .content2 div p{ 
 	margin: 0;
